@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <main id="main-doc">
+        <nav id="navbar">
+            <header id="header-link">C++ Documentation</header>
+            <div class="div-link"><a class="nav-link" href="#Introduction">Introduction</a></div>
+            <div class="div-link"><a class="nav-link" href="#History">History</a></div>
+            <div class="div-link"><a class="nav-link" href="#C++_And_C">C++ and C</a></div>
+            <div class="div-link"><a class="nav-link" href="#Hello_World">Hello World</a></div>
+            <div class="div-link"><a class="nav-link" href="#Declaring_variables">Declaring variables</a></div>
+            <div class="div-link"><a class="nav-link" href="#Conditions_And_Statements">Conditions and Statements</a></div>
+        </nav>
+        <div class="container">
+            <section class="main-section" id="Introduction">
+                <header><b>Introduction</b></header>
+                <p>C++ (pronounced "C plus plus") is a general-purpose programming language created by Danish computer scientist Bjarne Stroustrup as an extension of the C programming language, or "C with Classes".C++ was designed with systems programming and embedded, resource-constrained software and large systems in mind, with performance, efficiency, and flexibility of use as its design highlights.  </p>
+                <p>C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, for example:  </p>
+                <ul>
+                    <li>
+                        Desktop applications
+                    </li>
+                    <li>
+                        Video Games
+                    </li>
+                </ul>
+            </section>
+        <section class="main-section" id="History">
+            <header><b>History</b></header>
+            <p>In 1979, Bjarne Stroustrup, a Danish computer scientist, began work on "C with Classes", the predecessor to C++. The motivation for creating a new language originated from Stroustrup's experience in programming for his PhD thesis.</p>
+            <p>In 1982, Stroustrup started to develop a successor to C with Classes, which he named "C++" (++ being the increment operator in C).</p>
+            <p>In 1984, Stroustrup implemented the first stream input/output library. The idea of providing an output operator rather than a named output function was suggested by Doug McIlroy (who had previously suggested Unix pipes).</p>
+            <p>In 1989, C++ 2.0 was released, followed by the updated second edition of The C++ Programming Language in 1991.[21] New features in 2.0 included multiple inheritance, abstract classes, static member functions, const member functions, and protected members. In 1990, The Annotated C++ Reference Manual was published.</p>
+        </section>
+        <section class="main-section" id="C++_And_C">
+            <header><b>C++ and C</b></header>
+            <p>Both of these are programming language types, and one can use them for developing applications. There is a major difference between C and C++. The C language is a procedural one that provides no support for objects and classes. On the other hand, the C++ language is a combination of object-oriented and procedural programming languages.</p>
+        </section>
+        <section class="main-section" id="Hello_World">
+            <header><b>Hello World</b></header>
+            <p>Printing "Hello World" in C++ is very easy, and fast:</p>
+            <div class="code-div">
+                <code>#include</code>
+                <code>< iostream ></code><p></p>
+                <code>int main()</code><p></p>
+                <code>{</code><p></p>
+                <code>std::cout << "Hello, world!\n";</code><p></p>
+                <code>return 0;</code><p></p>
+                <code>}</code>
+            </div>
+        </section>  
+        <section class="main-section" id="Declaring_variables">
+            <header><b>Declaring variables</b></header>
+            <p>In C++, there are different types of variables:</p>
+            <div class="code-div">
+                <ul>
+                    <li><b>int</b> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+                    <code>int x = 17;</code>
+                    <li><b>double</b> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+                    <code>double y = 23.55;</code>
+                    <li><b>char</b> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes,</li>
+                    <code>char letter = n;</code>
+                    <li><b>string</b> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+                    <code>string word = night;</code>
+                    <li><b>bool</b> - stores values with two states: true or false</p>
+                    <code>bool day = true;</code>
+                </ul>
+            </div>
+        </section>
+        <section class="main-section" id="Conditions_And_Statements">
+            <header><b>Conditions and Statements</b></header>
+            <p>C++ supports the usual logical conditions from mathematics:</p>
+            <div class="code-div">
+            <ul>
+                <li>Less than: <b><code>a < b</code></b></li>
+                <li>Less than or equal to: <b><code>a <= b</code></b></li> <!--estaria bueno que los statements esten en azul-->
+                <li>Greater than: <b><code>a > b</code></b></li>
+                <li>Grater than or equal to: <b><code>a >= b</b></code></b></li>
+                <li>Equal to: <b><code>a == b</code></b></li>
+                <li>Not equal to: <b><code>a != b</code></b></li>
+            </ul>
+            </div>
+                <p>You can use these conditions to perform different actions for different decisions. C++ has the following conditional statements:</p>
+                <div class="code-div">
+                    <ul>
+                        <li>Use <b>if</b> to specify a block of code to be executed, if a specified condition is true.</li>
+                        <code><b>if</b>(condition){<p></p>// block of code to be executed if the condition is true<p></p>}</code>
+
+                        <li>Use <b>else</b> to specify a block of code to be executed, if the same condition is false.</li>
+                        <code><b>if</b>(condition){<p></p>// block of code to be executed if the condition is true<p></p>} <b>else</b> {<p></p>// block of code to be executed if the condition is false<p></p>}</code>
+
+                        <li>Use <b>else if</b> to specify a new condition to test, if the first condition is false.</li>
+                        <code><b>if</b>(condition1){<p></p>// block of code to be executed if the condition is true<p></p>} <b>else if</b>(condition2) {<p></p>// block of code to be executed if the condition1 is false and condition2 is true<p></p>}
+                        <b>else</b> {<p></p>// block of code to be executed if the condition1 and condition2 are false<p></p>}</code>
+
+                        <li>Use <b>switch</b> to specify many alternative blocks of code to be executed.</li>
+                        <code><b>switch</b>(expression) {<p></p>case x:<p></p>// code block<p></p>break;<p></p>case y:<p></p>// code block<p></p>break;<p></p>default:<p></p>// code block<p></p>}</code>
+                    </ul>
+                </div>
+        </section>
+        </div>
+    </main>
+</body>
+</html>
