@@ -58,6 +58,21 @@ li{
     background-color: rgb(255, 255, 237);
 }
 
+footer{
+    margin-top: 3vw;
+    height: 10vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 950px){
     *{
         margin: 0%;
